@@ -4,8 +4,11 @@
 ##datepicker
     $('#simple-calendar').datepicker({
       startDate : '2015-6-5',
-      format : 'yyyy年mm月dd日'
+      format : 'yyyy年mm月dd日'        //回填值的格式
     });
+    $('#simple-calendar').datePicker('show');
+    $('#simple-calendar').datePicker('hide');
+    $('#simple-calendar').datePicker('refresh');      
 
     全部参数
     startDate   : null,      //设置能选择日期的范围  格式 2015-06-01
@@ -18,20 +21,11 @@
     iconTop     : null,
     zIndex      : null,
     init        : null,
-    callback    : null
-
-    $('#startDate2').datepicker({
-      startDate : '2015-6-5',
-      format : 'yyyy年mm月dd日'         //回填值的格式
-    });
-
-    $('#startDate2').datePicker('show');
-    $('#startDate2').datePicker('hide');
-    $('#startDate2').datePicker('refresh');    
+    callback    : null  
 
 ##ympicker
     $('#simple-calendar').ympicker({
-      minYear : 2000,
+      minYear : 1980,
       maxYear : 2015
     });
 
@@ -47,8 +41,3 @@
     zIndex      : null,
     init        : null,
     callback    : null
-
-    $('#startDate').ympicker({
-      minYear : 1980,
-      maxYear : 2015
-    });
