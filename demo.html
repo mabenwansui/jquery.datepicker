@@ -77,14 +77,18 @@
 <script>
 $(function(){
   $('#startDate').ympicker({
-    minYear : 2000,
+    minYear : 1980,
     maxYear : 2015
   });
 
   $('#startDate2').datepicker({
     startDate : '2015-6-5',
-    format : 'yyyy年mm月dd日'
+    format : 'yyyy年mm月dd日'         //回填值的格式
   });
+
+  $('#startDate2').datePicker('show');
+  $('#startDate2').datePicker('hide');
+  $('#startDate2').datePicker('refresh');
 });
 </script>
 

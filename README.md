@@ -19,7 +19,16 @@
     zIndex      : null,
     init        : null,
     callback    : null
-     
+
+    $('#startDate2').datepicker({
+      startDate : '2015-6-5',
+      format : 'yyyy年mm月dd日'         //回填值的格式
+    });
+
+    $('#startDate2').datePicker('show');
+    $('#startDate2').datePicker('hide');
+    $('#startDate2').datePicker('refresh');    
+
 ##ympicker
     $('#simple-calendar').ympicker({
       minYear : 2000,
@@ -38,3 +47,8 @@
     zIndex      : null,
     init        : null,
     callback    : null
+
+    $('#startDate').ympicker({
+      minYear : 1980,
+      maxYear : 2015
+    });
